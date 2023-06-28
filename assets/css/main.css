@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  background-color: #8cc84c;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.search-tags {
+  width: 500px;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+.search-tags-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.search-tags .tag-list {
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 1px solid #888;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+.search-tags .tag-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  line-height: 1.6;
+  background-color: #8cc84c;
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 0 6px 8px;
+}
+.search-tags .tag-list li > i {
+  cursor: pointer;
+  padding: 8px;
+  display: inline-block;
+}
+.search-tags .tag-list li > i:hover {
+  opacity: 0.6;
+}
+.search-tags .input-tag {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 8px;
+  font-size: 2.2rem;
+  border: none;
+}
+.search-tags .input-tag:focus {
+  outline: none;
+}
+.search-tags .btn {
+  font-size: 1.6rem;
+  background-color: #888;
+  border: none;
+  color: #000;
+  outline: none;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  will-change: opacity;
+}
+.search-tags .btn:hover {
+  opacity: 0.8;
+}
+.search-tags .btn.btn-remove-all {
+  background-color: #8cc84c;
+  color: #fff;
+}
